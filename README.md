@@ -32,5 +32,5 @@ The whole tech stack used in both front-end and backend include the following:
 
 
 
-![Car Park](/images/img/carpark5.jpg)
+![Car Park](D:\Angular Code\secondendrytest\src\assets\img\carpark5.jpg)
 
