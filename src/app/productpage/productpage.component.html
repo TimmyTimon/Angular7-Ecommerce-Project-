@@ -1,0 +1,158 @@
+<body>
+<!--The Navigation Body-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+  <h2><a class="navbar-brand" href="#">ENDRY</a></h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="container-fluid col-md-4 col-12">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </div>
+      <ul class="navbar-nav ml-auto">
+                
+
+           <li class="nav-item ">
+             <a class="nav-item nav-link active" role="button" routerLink="#"><i class="far fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link active" role="button" routerLink="#" ><i class="fas fa-cog"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link active" role="button" routerLink="#"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link active" role="button" routerLink="/accesslevel"><i class="far fa-user"></i></a>
+                  </li>
+            </ul>
+  </div>
+  </div>
+</nav>
+
+<!--The Main Body-->
+<div class="container-fluid">
+
+<br>
+<br>
+
+<div class="row">
+    <div class="col-md-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-laptop-tab" data-toggle="pill" href="#v-pills-laptop" role="tab" aria-controls="v-pills-laptop" aria-selected="true">Laptops</a>
+        <a class="nav-link" id="v-pills-desktop-tab" data-toggle="pill" href="#v-pills-desktop" role="tab" aria-controls="v-pills-desktop" aria-selected="false">Desktops</a>
+        <a class="nav-link" id="v-pills-printers-tab" data-toggle="pill" href="#v-pills-printers" role="tab" aria-controls="v-pills-printers" aria-selected="false">Printers</a>
+        <a class="nav-link" id="v-pills-phones-tab" data-toggle="pill" href="#v-pills-phones" role="tab" aria-controls="v-pills-phones" aria-selected="false">Phones</a>
+        <a class="nav-link" id="v-pills-landlines-tab" data-toggle="pill" href="#v-pills-landlines" role="tab" aria-controls="v-pills-landlines" aria-selected="false">Landline Phones</a>
+        <a class="nav-link" id="v-pills-shredders-tab" data-toggle="pill" href="#v-pills-shredders" role="tab" aria-controls="v-pills-shredders" aria-selected="false">Shredders</a>
+        <a class="nav-link" id="v-pills-tv-tab" data-toggle="pill" href="#v-pills-tv" role="tab" aria-controls="v-pills-tv" aria-selected="false">Televisions</a>
+        
+        
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="tab-content" id="v-pills-tabContent">
+           <!--Laptop Content-->
+        <div class="tab-pane fade show active" id="v-pills-laptop" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          
+          <app-laptops></app-laptops>
+
+        </div>
+
+        <!--Desktop Content-->
+        <div class="tab-pane fade" id="v-pills-desktop" role="tabpanel" aria-labelledby="v-pills-desktop-tab">
+
+           <app-desktops></app-desktops>
+
+        </div>
+        
+        <div class="tab-pane fade" id="v-pills-printers" role="tabpanel" aria-labelledby="v-pills-printers-tab">
+          
+  
+          <div class="container-fluid">
+  
+          <div class="card-group">
+          <div class="card">
+            <div  *ngFor="let product of products | async; index as productId">
+            <img src="data:image/png;base64,{{product.photo}}"  class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Name :{{product.productName}}</h5>
+              <p class="card-text">Description {{product.description}}</p>
+              <p class="card-text">Price: {{product.price | currency }}</p>
+              <a [routerLink]="['/products',productId]" >
+              <button class="btn btn-primary" style="text-align: right" >View</button>
+              </a>
+            </div>
+            </div>
+          </div>
+
+          </div>
+
+              </div>
+
+      
+          
+
+        </div>
+        <div class="tab-pane fade" id="v-pills-phones" role="tabpanel" aria-labelledby="v-pills-phones-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-landlines" role="tabpanel" aria-labelledby="v-pills-landlines-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-shredders" role="tabpanel" aria-labelledby="v-pills-shredders-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-tv" role="tabpanel" aria-labelledby="v-pills-tv-tab">...</div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<br>
+<br>
+<br>
+
+ <!--The Footer Section-->
+ <div class="container-fluid">
+    <footer>
+        <div id="footer-content">
+          <div class="row">
+           
+           <div class="col-md-4" style="text-align: center">
+               <h3 class="page-header">About</h3>
+               <hr class="my-3">
+               <p><a href="#">About Us</a></p>
+               <p><a href="#">Services</a></p>
+               <p><a href="#">FAQs</a></p>
+           </div>
+
+           <div class="col-md-4" style="text-align: center">
+               <h3 class="page-header">Company</h3>
+               <hr class="my-3">
+               <p><a href="#">Contact Us</a></p>
+               <p><a href="#">Help</a></p>
+               <p><a href="#">Careers</a></p>
+               <p><a href="#">Terms & Conditions</a></p>
+             </div>
+
+             <div class="col-md-4" style="text-align: center">
+                 <h3 class="page-header">Content And Social</h3>
+                 <hr class="my-3">
+                 <p><a href="#">Blog</a></p>
+                <p><a href="#">Instagram</a></p>
+                 <p><a href="#">Twitter</a></p>
+                 <p><a href="#">LinkedIn</a></p>
+               </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-12" style="text-align: center">
+          <hr class="my-2">
+          <h5>&copy; 2019 ENDRY.All rights reserved.</h5>
+        </div>
+    </footer>
+</div>
+
+</body>
+

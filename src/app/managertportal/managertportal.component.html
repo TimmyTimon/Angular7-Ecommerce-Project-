@@ -1,0 +1,289 @@
+<body>
+  <!--The Navigation Body-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+      <h2><a class="navbar-brand" href="#">ENDRY</a></h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="container-fluid col-md-4 col-12">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </div>
+          <ul class="navbar-nav ml-auto">
+                    
+    
+               <li class="nav-item ">
+                 <a class="nav-item nav-link active" role="button" routerLink="#"><i class="far fa-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link active" role="button" routerLink="#" ><i class="fas fa-cog"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link active" role="button" routerLink="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link active" role="button" routerLink="/accesslevel"><i class="far fa-user"></i></a>
+                      </li>
+                </ul>
+      </div>
+      </div>
+    </nav>
+  
+    <br>
+    <!--The Second Tab-->
+    <nav class="nav nav-tabs justify-content-center" style="background-color: #e3f2fd;">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-cart" role="tab" aria-controls="nav-home" aria-selected="true">View Cart</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-reviewOrder" role="tab" aria-controls="nav-profile" aria-selected="false">Review Orders</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-confirmOrder" role="tab" aria-controls="nav-contact" aria-selected="false">Confirm Orders</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-orderHistory" role="tab" aria-controls="nav-contact" aria-selected="false">Order History</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <!--The Shopping cart Panel-->
+        <div class="tab-pane fade show active" id="nav-cart" role="tabpanel" aria-labelledby="nav-home-tab">
+         <!--The Shopping Cart-->
+      <br>
+      <br>
+         <div class="container-fluid">
+            <div class="col-md-12" style="text-align: center">
+                  <h2 class="page-header">SHOPPING CART</h2>
+            </div>
+            
+            </div>
+            
+            <hr class="my-2">
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <!--The Cart Details-->
+            <div class="container-fluid">
+            
+              <div class="row text-center">
+                
+              <div class="col-md-8">
+            
+                  <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">ITEM</th>
+                          <th scope="col">PRICE</th>
+                          <th scope="col">QUANTITY</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Dell Laptop</td>
+                          <td>$450</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Samsung Smartphone</td>
+                          <td>$650</td>
+                          <td>1</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td >A4 Printing Papers</td>
+                          <td>$120</td>
+                          <td>100</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            
+                    <br>
+                    <br>
+                    <br>
+                    
+            
+                    <div class="float-left">
+                     <a role="button" class="btn btn-secondary"><span><i class="fas fa-chevron-left"></i></span> Return To Shopping</a>
+                    </div>
+            
+                    <div class="float-right">
+                    <a role="button" class="btn btn-primary">Review Items <span><i class="fas fa-chevron-right"></i></span></a>
+                    </div>  
+            
+              </div>
+            
+              <!--Order Summary Panel-->
+              <div class="col-md-4">
+                
+                <div id="shoppingdetails">
+                  <h3>ORDER SUMMARY</h3>
+                  <p>Shipping and additional costs are well laid out below</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Dell Computer <p class="float-right">$420</p></li>
+                        <li class="list-group-item">Samsung Galaxy Smartphone <p class="float-right">$650</p> </li>
+                        <li class="list-group-item">Printing A4 Papers <p class="float-right">$120</p> </li>
+                      </ul>
+                </div>
+            
+              </div>
+            
+              </div>
+            
+            </div>
+  
+            <br>
+            <br>
+            <br>
+  
+        </div>
+  
+        <!--Review Order Panel-->
+        <div class="tab-pane fade" id="nav-reviewOrder" role="tabpanel" aria-labelledby="nav-profile-tab">
+  
+            <br>
+            <br>
+               <div class="container-fluid">
+                  <div class="col-md-12" style="text-align: center">
+                        <h2 class="page-header">SHOPPING CART</h2>
+                  </div>
+                  
+                  </div>
+                  
+                  <hr class="my-2">
+                  
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  
+                  <!--The Cart Details-->
+                  <div class="container-fluid">
+                  
+                    <div class="row text-center">
+                      
+                    <div class="col-md-8">
+                  
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ITEM</th>
+                                <th scope="col">PRICE</th>
+                                <th scope="col">QUANTITY</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Dell Laptop</td>
+                                <td>$450</td>
+                                <td>3</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Samsung Smartphone</td>
+                                <td>$650</td>
+                                <td>1</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td >A4 Printing Papers</td>
+                                <td>$120</td>
+                                <td>100</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                  
+                          <br>
+                          <br>
+                          <br>
+                          
+                  
+                          <div class="float-left">
+                           <a role="button" class="btn btn-secondary"><span><i class="fas fa-chevron-left"></i></span> Return To Shopping</a>
+                          </div>
+                  
+                          <div class="float-right">
+                          <a role="button" class="btn btn-primary">Place Order</a>
+                          </div>  
+                  
+                    </div>
+                  
+                    <!--Order Summary Panel-->
+                    <div class="col-md-4">
+                      
+                      <div id="shoppingdetails">
+                        <h3>ORDER SUMMARY</h3>
+                        <p>Shipping and additional costs are well laid out below</p>
+                          <ul class="list-group">
+                              <li class="list-group-item">Dell Computer <p class="float-right">$420</p></li>
+                              <li class="list-group-item">Samsung Galaxy Smartphone <p class="float-right">$650</p> </li>
+                              <li class="list-group-item">Printing A4 Papers <p class="float-right">$120</p> </li>
+                            </ul>
+                      </div>
+                  
+                    </div>
+                  
+                    </div>
+                  
+                  </div>
+        
+                  <br>
+                  <br>
+                  <br>  
+  
+        </div>
+        <div class="tab-pane fade" id="nav-confirmOrder" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        <div class="tab-pane fade" id="nav-orderHistory" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+      </div>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+  
+    <!--The Footer-->
+  <div class="container-fluid">
+      <footer>
+          <div id="footer-content">
+            <div class="row">
+             
+             <div class="col-md-4" style="text-align: center">
+                 <h3 class="page-header">About</h3>
+                 <hr class="my-3">
+                 <p><a href="#">About Us</a></p>
+                 <p><a href="#">Services</a></p>
+                 <p><a href="#">FAQs</a></p>
+             </div>
+  
+             <div class="col-md-4" style="text-align: center">
+                 <h3 class="page-header">Company</h3>
+                 <hr class="my-3">
+                 <p><a href="#">Contact Us</a></p>
+                 <p><a href="#">Help</a></p>
+                 <p><a href="#">Careers</a></p>
+                 <p><a href="#">Terms & Conditions</a></p>
+               </div>
+  
+               <div class="col-md-4" style="text-align: center">
+                   <h3 class="page-header">Content And Social</h3>
+                   <hr class="my-3">
+                   <p><a href="#">Blog</a></p>
+                  <p><a href="#">Instagram</a></p>
+                   <p><a href="#">Twitter</a></p>
+                   <p><a href="#">LinkedIn</a></p>
+                 </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-md-12" style="text-align: center">
+            <hr class="my-2">
+            <h5>&copy; 2019 ENDRY.All rights reserved.</h5>
+          </div>
+      </footer>
+  </div>
+  
+  </body>

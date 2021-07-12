@@ -1,0 +1,173 @@
+<!--The Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <h2><a class="navbar-brand" href="#">ENDRY</a></h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-item nav-link active" routerLink="/main">Home <span class="sr-only">(current)</span></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link active" routerLink="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link active" routerLink="#">Contact</a>
+                </li>
+            </ul>
+  </div>
+</nav>
+
+
+<!--The Main Body-->
+<div class="container-fluid">
+    <div class="col-12" style="text-align: center">
+        <h1>ENDRY</h1>
+        </div>
+     
+        <br>
+        <br>
+     
+        <div class="col-12" style="text-align: center">
+         <h2>EMPLOYEE ZONE</h2>
+         <hr class="my-2">
+        </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<!--The Employee Signup Form-->
+<div class="container-fluid text-center">
+
+
+  <div [hidden]="submitted" style="width: 400px;" class="text-center">  
+      <form (ngSubmit)="onSubmit()" #empForm="ngForm" >
+
+          <div class="form-group row">
+              <label for="firstName" class="col-sm-3 col-form-label">First Name</label>
+              <div class="col-sm-6">
+                <input type="text"  class="form-control" id="firstName" #fname="ngModel" required  [(ngModel)]="employee.firstName" name="firstName">
+              </div>
+            </div>
+
+            <!--First name validation-->
+            <div *ngIf="fname.invalid && (fname.dirty || fname.touched)">
+             <p *ngIf="fname.hasError('required')">
+               Username is required!
+             </p>
+            
+            </div>
+
+
+            <div class="form-group row">
+                <label for="lastName" class="col-sm-3 col-form-label">Last Name</label>
+                <div class="col-sm-6">
+                  <input type="text"  class="form-control" id="lastName" required [(ngModel)]="employee.lastName" name="lastName">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="gender" class="col-sm-3 col-form-label">Gender</label>
+                <div class="col-sm-6">
+                <select class="form-control" id="gender"  required [(ngModel)]="employee.gender" name="gender" >
+                  <option *ngFor="let gend of genders" [value]="gend">{{gend}}</option>
+                </select>
+              </div>
+              </div>
+
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-6">
+                      <input type="text"  class="form-control" id="email" required [(ngModel)]="employee.email" name="email">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="phone" class="col-sm-3 col-form-label">Phone Number</label>
+                    <div class="col-sm-6">
+                      <input type="text"  class="form-control"  id="phone" required [(ngModel)]="employee.phone" name="phone" >
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="org_name" class="col-sm-3 col-form-label">Organization Name</label>
+                    <div class="col-sm-6">
+                      <input type="text"  class="form-control" id="orgName" required [(ngModel)]="employee.orgName" name="orgName" >
+                    </div>
+                  </div>
+  
+            <div class="form-group row">
+                <label for="username" class="col-sm-3 col-form-label">Username</label>
+                <div class="col-sm-6">
+                  <input type="text"  class="form-control" id="username" required [(ngModel)]="employee.username" name="username">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                  <label for="Password" class="col-sm-3 col-form-label"> Password</label>
+                  <div class="col-sm-6">
+                    <input type="password"  class="form-control" id="password" required [(ngModel)]="employee.password" name="password" >
+                  </div>
+                </div>
+  
+  <button type="submit" class="btn btn-primary" [disabled]="empForm.invalid">Submit</button>
+
+
+
+      </form>
+
+</div>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+</div>
+
+<br>
+ <br>
+ <br>
+ <!--The Footer-->
+ <div class="container-fluid">
+    <footer>
+        <div id="footer-content">
+          <div class="row">
+           
+           <div class="col-4" style="text-align: center">
+               <h3 class="page-header">About</h3>
+               <hr class="my-3">
+               <p><a href="#">About Us</a></p>
+               <p><a href="#">Services</a></p>
+               <p><a href="#">FAQs</a></p>
+           </div>
+
+           <div class="col-4" style="text-align: center">
+               <h3 class="page-header">Company</h3>
+               <hr class="my-3">
+               <p><a href="#">Contact Us</a></p>
+               <p><a href="#">Help</a></p>
+               <p><a href="#">Careers</a></p>
+               <p><a href="#">Terms & Conditions</a></p>
+             </div>
+
+             <div class="col-4" style="text-align: center">
+                 <h3 class="page-header">Content And Social</h3>
+                 <hr class="my-3">
+                 <p><a href="#">Blog</a></p>
+                <p><a href="#">Instagram</a></p>
+                 <p><a href="#">Twitter</a></p>
+                 <p><a href="#">LinkedIn</a></p>
+               </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-12" style="text-align: center">
+          <hr class="my-2">
+          <h5>&copy; 2019 ENDRY</h5>
+        </div>
+    </footer>
+ </div>

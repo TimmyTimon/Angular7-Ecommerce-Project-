@@ -1,0 +1,80 @@
+<div class="container-fluid">
+
+  <br>
+  <div class="container-fluid">
+      <div class="col-12" style="text-align: center">
+          <h2 class="display-4">EDIT PRODUCT</h2>
+          <hr class="my-2">
+         </div>
+
+  </div>
+
+  <br>
+  <br>
+
+<div class="row">
+
+  <!--The Product Add Form-->
+  <div class="col-md-9">
+    
+
+      <div [hidden]="submitted" style="width: 400px;"> 
+          <form >
+    
+              <div class="form-group row">
+                  <label for="productName" class="col-sm-3 col-form-label">Product Name</label>
+                  <div class="col-sm-6">
+                    <input type="text"  class="form-control" id="productName" required   name="productName" placeholder="Product Name">
+                  </div>
+                </div>
+    
+    
+                <div class="form-group row">
+                    <label for="description" class="col-sm-3 col-form-label">Description</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" id="description" required  name="description" rows="5"></textarea>
+                    </div>
+                  </div>
+    
+                  <div class="form-group row">
+                    <label for="price" class="col-sm-3 col-form-label">Price</label>
+                    <div class="col-sm-6">
+                        <input type="text"  class="form-control" id="price" required name="price" placeholder="Price">
+                  </div>
+                  </div>
+    
+                    <div class="form-group row">
+                        <label for="quantity" class="col-sm-3 col-form-label">Quantity</label>
+                        <div class="col-sm-6">
+                          <input type="text"  class="form-control" id="quantity" required  name="quantity" placeholder="Quantity">
+                        </div>
+                      </div>
+      
+                      <div class="form-group row">
+                          <label for="productPhoto" class="col-sm-3 col-form-label">Product Photo</label>
+                          <div class="col-sm-6">
+                            <input type="file" class="btn btn-primary" accept="image/*"  >
+                        </div>
+                        </div>
+
+      
+      <button type="submit" class="btn btn-primary">Add</button>
+    
+          </form>
+    
+    </div>
+    
+    <div [hidden]="!submitted">
+      <h4>You submitted successfully!</h4>
+    </div>
+    
+
+  </div>
+
+  <div class="col-md-3">
+     <h2 class="display-4">Photo Will Be Here</h2>
+  </div>
+
+</div>
+
+</div>

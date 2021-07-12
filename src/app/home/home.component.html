@@ -1,0 +1,834 @@
+<body>
+<!--The Navigation Bar-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <a class="navbar-brand" [routerLink]="root"> 
+   <img src="/assets/images/viewer/Endry Logo4.png" width="100" height="60" class="d-inline-block align-top" alt=""> 
+   
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+           
+             <li class="nav-item">
+               <a class="nav-item nav-link active" routerLink="/blog">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link active" routerLink="/blog">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link active" routerLink="/signup">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link active" routerLink="/accesslevel" class="btn btn-outline-primary" >SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-item nav-link active" role="button" routerLink="#"><i class="fas fa-shopping-cart"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item nav-link active" role="button" routerLink="/accesslevel"><i class="far fa-user"></i></a>
+                        </li>
+              </ul>
+    </div>
+  </nav>
+  
+  
+  
+        <!--The Header Section-->
+      <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-2" data-slide-to="1"></li>
+    <li data-target="#carousel-example-2" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img  src="/assets/images/viewer/Laptop.jpg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive font-weight-bold">Quality Products</h3>
+        <p class="font-weight-bold">First text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="/assets/images/viewer/purchase.jpg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive font-weight-bold">Best Deals!</h3>
+        <p class="font-weight-bold">Secondary text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="/assets/images/viewer/credit-card.jpeg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive font-weight-bold">Seamless Transactions</h3>
+        <p class="font-weight-bold">Third text</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+    
+  
+      <br>
+      <br>
+      <main>
+
+        <div class="container-fluid">
+          <h2 class="text-center">Product Category</h2>
+          <hr class="my-2">
+         <br>
+         <br>
+          <!--Product Carousel-->
+
+          <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+       
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/laptops/Dell XPS 15 7590.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">LAPTOPS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/desktops/Dell Inspiron 27.jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">DESKTOPS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/viewer/Phone2.jpeg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">PHONES</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/desktops/Dell Inspiron 27.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">PRINTERS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/desktops/Dell Inspiron 27.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">OFFICE STATIONARY</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="/assets/images/desktops/Dell Inspiron 27.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">CAMERAS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <!--/.Second slide-->
+  
+      <!--Third slide-->
+      <div class="carousel-item">
+  
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">OFFICE FURNITURE</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">SURVEILLANCE CAMERAS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">KITCHEN UTILITIES</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <!--/.Third slide-->
+  
+    </div>
+    <!--/.Slides-->
+  
+  </div>
+  <!--/.Carousel Wrapper-->
+
+          <!--/End of Carousel-->
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+        <!--Featured Products Section-->
+        <div class="container-fluid">
+          <h2 class="text-center"> Featured Products</h2>
+          <hr class="my-2">
+          <br>
+          <br>
+
+           <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+     
+      <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">LAPTOPS</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">DESKTOP</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">PHONES</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">PRINTERS</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">OFFICE STATIONARY</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">CAMERAS</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="row">
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">OFFICE FURNITURE</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">SURVEILLANCE CAMERAS</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title text-center">KITCHEN UTILITIES</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <!--/.Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+        <!--/End of Carousel-->
+
+
+        </div>
+        <!--/ End Of Featured Products Section-->
+
+        <br>
+        <br>
+        <br>
+
+        <!--New Arrivals Section-->
+        <div class="container-fluid">
+          <h2 class="text-center">NEW ARRIVALS</h2>
+          <hr class="my-2">
+          <br>
+          <br>
+
+           <!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+          class="fas fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+  
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+  
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+  
+      <!--First slide-->
+      <div class="carousel-item active">
+       
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">LAPTOPS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">DESKTOP</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+              alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">PHONES</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+
+      </div>
+      <!--/.First slide-->
+  
+      <!--Second slide-->
+      <div class="carousel-item">
+  
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">PRINTERS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">OFFICE STATIONARY</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">CAMERAS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <!--/.Second slide-->
+  
+      <!--Third slide-->
+      <div class="carousel-item">
+  
+        <div class="row">
+
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">OFFICE FURNITURE</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">SURVEILLANCE CAMERAS</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title text-center">KITCHEN UTILITIES</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a class="btn btn-primary">Button</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      </div>
+      <!--/.Third slide-->
+  
+    </div>
+    <!--/.Slides-->
+  
+  </div>
+  <!--/.Carousel Wrapper-->
+
+          <!--/End of Carousel-->
+
+
+        </div>
+        <!--/End Of New Arrivals Section-->
+
+        <br>
+        <br>
+        <br>
+
+        <!--Transaction Section-->
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-md-6">
+            <img src="/assets/images/viewer/credit-card.jpeg" alt="Transaction Image" class="img-fluid">
+            </div>
+
+            <div class="col-md-6">
+             <h2 class="display-4">Instant and Seamless Transactions</h2>
+             <p>Pay for products you purchase instantly.</p>
+             <p>We provide a seamless and reliable transaction proceess for all our users.</p>
+             <p>Pay using all the different payment methods such as Paypal, Visa or Matercard</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--/End Of Transaction Section-->
+
+        <br>
+        <br>
+        <br>
+        <!--Produt Category Section-->
+        <div class="conatiner-fluid">
+          <div class="row">
+
+            <div class="col-md-6">
+                <h2 class="display-4">RICH PRODUCT CATALOG</h2>
+                <p>Sort through a varity of products.</p>
+                <p>Get the best quality products and prices.</p>
+               </div>
+
+            <div class="col-md-6">
+                <img src="/assets/images/viewer/imac.jpg" alt="Product Catalog" class="img-fluid">
+            </div>
+
+            </div>
+
+          </div>
+
+        <!--/ End Of Product Category Section-->
+
+        <br>
+        <br>
+        <br>
+        <!--Payment Options-->
+
+        <div class="container-fluid">
+          <h2 class="page-header" style="text-align: center" >PAY USING MULTIPLE OPTIONS</h2>
+           <hr class="my-2">
+     <div class="row">
+      
+      <div class="col-4 text-center">
+          <h3><i class="fab fa-paypal"></i></h3>
+      </div>
+
+      <div class="col-4 text-center">
+          <h3><i class="fab fa-cc-visa"></i></h3>
+        </div>
+
+        <div class="col-4 text-center">
+            <h3><i class="fab fa-cc-mastercard"></i></h3>
+          </div>
+
+     </div>
+
+     </div>
+
+        <br>
+        <br>
+        <br>
+        <!--Connect With Us Section-->
+        <div class="container-fluid">
+            <h2 class="page-header" style="text-align: center" >Connect With Us</h2>
+             <hr class="my-2">
+       <div class="row">
+        
+        <div class="col-4 text-center">
+            <h3><i class="fab fa-instagram" style="text-align: center"></i></h3>
+        </div>
+
+        <div class="col-4 text-center">
+            <h3><i class="fab fa-twitter" style="text-align: center"></i></h3>
+          </div>
+
+          <div class="col-4 text-center">
+              <h3><i class="fab fa-linkedin" style="text-align: center"></i></h3>
+            </div>
+
+       </div>
+
+       </div>
+        <!--/ End Of Connect With Us Section-->
+        
+      </main>
+  
+  
+         
+  
+         <br>
+         <br>
+         <br>
+  
+         <!--The Footer Section-->
+         <div class="container-fluid">
+             <footer>
+                 <div id="footer-content">
+                   <div class="row">
+                    
+                    <div class="col-4" style="text-align: center">
+                        <h3 class="page-header">About</h3>
+                        <hr class="my-3">
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Services</a></p>
+                        <p><a href="#">FAQs</a></p>
+                    </div>
+  
+                    <div class="col-4" style="text-align: center">
+                        <h3 class="page-header">Company</h3>
+                        <hr class="my-3">
+                        <p><a href="#">Contact Us</a></p>
+                        <p><a href="#">Help</a></p>
+                        <p><a href="#">Careers</a></p>
+                        <p><a href="#">Terms & Conditions</a></p>
+                      </div>
+  
+                      <div class="col-4" style="text-align: center">
+                          <h3 class="page-header">Content And Social</h3>
+                          <hr class="my-3">
+                          <p><a href="#">Blog</a></p>
+                         <p><a href="#">Instagram</a></p>
+                          <p><a href="#">Twitter</a></p>
+                          <p><a href="#">LinkedIn</a></p>
+                        </div>
+  
+                   </div>
+  
+                 </div>
+  
+                 <div class="col-12" style="text-align: center">
+                   <hr class="my-2">
+                   <h5>&copy; 2019 ENDRY.All rights reserved.</h5>
+                 </div>
+             </footer>
+         </div>
+  
+    </body>
+  
+  
+    

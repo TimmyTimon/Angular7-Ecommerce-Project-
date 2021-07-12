@@ -1,0 +1,17 @@
+/*Import fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap');
+
+:root{
+    --open-sans:'Open Sans';
+    --lato:"Lato";
+    --montserrat:Montserrat;
+}
+
+.carousel-inner img{
+width: 100%;
+height: 25%;
+}
+
+body{
+    font-family: 'Open Sans';
+}

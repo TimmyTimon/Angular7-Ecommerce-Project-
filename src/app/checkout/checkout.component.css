@@ -1,0 +1,11 @@
+/*Import fonts from Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans';
+}
+
+/*Body style */
+body{
+    padding: 10px;
+}

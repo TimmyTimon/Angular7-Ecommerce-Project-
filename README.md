@@ -1,27 +1,36 @@
-# Secondendrytest
+# Angular 7 Ecommerce Appliaction 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+This project was generated with Angular version 7.3.1.
 
-## Development server
+## Ecommerce Application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is an eCommerce application that is built using Angular 7
 
-## Code scaffolding
+## Application Sections
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The application contains the folowing pages
+1. Home Page 
+2. Product page
+3. Product Details page
+4. Sign up pages
+5. Checkout page 
+6. Cart page
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Application Tech Stack 
 
-## Running unit tests
+The whole tech stack used in both front-end and backend include the following:
+- Angular
+- Java
+- Spring Boot
+- MySQL
+- Bootstrap 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ecommerce Application Page Samples
+### Image
+![Product](http://markdown-here.com/img/icon256.png)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+![Car Park](/images/img/carpark5.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
